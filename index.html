@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="assets/images/yu.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+<style>
+.topnav {
+  overflow: auto;
+  background-color: inherit;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ccc;
+  border-radius: 27px;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 300px;
+  height: 50px;
+ border-left: dotted red;
+ border-right: dotted yellow;
+ border-top: dotted blue;
+ border-bottom: dotted green;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 180px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  height: 68px;
+  width: 100px;
+ border-left: dotted inherit;
+ border-right: dotted yellow;
+ border-top: dotted blue;
+ border-bottom: dotted green;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) { 
+.topnav input[type=text] {
+                background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+        		visibility: hidden;
+  }
+
+@media screen and (max-width: 600px) {
+  .topnav a{
+            background-color: red;    
+  }
+@media screen and (max-width: 600px) {
+  .topnav {
+            background-color: red;
+               width: -17px;    
+  }
+
+@media screen and (max-width: 600px) {
+  .scrollmenu {
+             display: block;   
+  }
+
+@media screen and (max-width: 600px) {
+  .scrollmenu a{
+              display: block; 
+  }
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+               width: -17px;
+    left: -900px; 
+margin-left: -1002px; 
+  width: -17px;
+background-color: inherit;
+  }
+
+@media screen and (max-width: 600px) {
+  .sidebar a {
+margin-left: -1002px; 
+  width: -17px;
+background-color: inherit;
+  }
+
+@media screen and (max-width: 600px) {
+  .main {
+             margin-left: -1002px;  
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 900px;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid linen;  
+  }
+}
+}
+}
+}
+}
+}
+}
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="#about"></a>
+  <a style="float:right" href="#contact"><style>
+.cont img {
+  max-width: 60px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+</style>
+
+<div class="cont">
+  <img src="assets/images/A.jpg" alt="Avatar" style="width:65%;">
+</div></a>
+
+  <a style="float:right" href="#contact"><style>
+.cont img {
+  max-width: 60px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+</style>
+
+<div class="cont">
+  <i class="fa-solid fa-bell fa-2x"></i>
+</div></a>
+
+
+
+  <a style="float:right" href="#contact"><style>
+.cont img {
+  max-width: 60px;
+  width: 100%;
+  border-radius: 500%;
+}
+
+</style>
+
+<div class="cont">
+<i class="fa-solid fa-video fa-2x"></i>
+</div></a>
+<div class="cont">
+  <div class="search-container">
+    <form action="/action_page.php">
+   <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+</div></a>
+<br>
+
+
+
+<style>
+div.scroll {
+  background-color: inherit;
+  overflow: auto;
+  white-space: nowrap;
+  color:black;
+ border-radius: 25px;
+}
+
+div.scroll span {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  color:black;
+  font-size: 12px;
+}
+ 
+.ter {
+        border-radius: 15px;
+  background-color: inherit;
+        border-color: inherit;
+}
+</style>
+
+<div class="scroll">
+<button style=" border-radius: 25px;">  <span>Home</span></button>
+<button style="visibility: hidden;" >  <span></span></button> 
+<button style="visibility: hidden;" >  <span></span></button> 
+<button style="visibility: hidden;" >  <span></span></button> 
+<button class="ter">  <span>ALL</span></button>
+<button class="ter">  <span>Gaming</span></button>
+<button class="ter">  <span>Broda Shaggi</span></button>
+<button class="ter">  <span>Islam</span></button>
+<button class="ter">  <span>Shank Comics</span></button>
+<button class="ter">  <span>EA Fc 24</span></button>
+<button class="ter">  <span>Soccer AID</span></button>
+<button class="ter">  <span>Football Moments</span></button>
+<button class="ter">  <span>Kevin Hart</span></button>
+<button class="ter">  <span>Fascinating Facts Verse</span></button>
+<button class="ter">  <span>Grand Theft Auto V</span></button>
+<button class="ter">  <span>Drake</span></button>
+<button class="ter">  <span>Comedy Skit</span></button>
+<button class="ter">  <span>Korty EO</span></button>
+<button class="ter">  <span>Hackex</span></button>
+<button class="ter">  <span>Anonymous</span></button>
+<button class="ter">  <span>Wixoboy</span></button>
+<button class="ter">  <span>Recently Uploaded</span></button>
+<button class="ter">  <span>New To You</span></button>
+</div>
+</div>
+
+<style>
+div.scrollmenu {
+  background-color: inherit;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  margin: 40px;
+  text-decoration: none;
+}
+
+</style>
+
+<style>
+.sidebar {
+  height: 100%;
+  width: 221px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: inherit;
+}
+
+.main {
+  margin-left: -38px; /* Same as the width of the sidenav */
+  
+}
+</style>
+<div class="sidebar">
+  <a style="font-size: 22px"><i class="fa-brands fa-youtube" style="color: #c71a1a;"></i>YOUTUBE</a>
+  <a style="margin: 5px" href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a style="margin: 5px" href="#services"> <i class="fa-solid fa-play"></i> Shorts</a>
+  <a href="#clients"><i class="fa-solid fa-tv"></i>  Subs......</a><hr>
+  <a  style="font-size: 21px" href="#contact"><b><strong> You</strong></b>  <i class="fa-solid fa-angle-right"></i></a>
+  <a style="margin: 5px" href="#services"><i class="fa-regular fa-user"></i> My channel</a>  
+  <a style="margin: 5px" href="#services"><i class="fa-solid fa-clock-rotate-left fa-flip-vertical"></i> History</a>
+   <a style="margin: 5px" href="#services"><i class="fa-solid fa-video fa-rotate-180"></i> My videos</a>
+   <a style="margin: 5px" href="#services"><i class="fa-regular fa-clock"></i> Watch later</a>
+ <a style="margin: 5px" href="#services"><i class="fa-regular fa-thumbs-up"></i> Like videos</a><hr>
+ <a style="margin-left:-16px"> <strong><b>Subscription</b></strong></a>
+<a>
+<style>
+img {
+  border-radius: 50%;
+  margin-left: -10px;
+  margin-bottom: -5px;  
+}
+</style>
+
+<img src="assets/images/f.jpg" alt="Avatar" style="width:25px"> <span style="">FFV </span> 
+</a>
+
+<a>
+<style>
+img {
+  border-radius: 50%;
+  margin-left: -10px;
+  margin-bottom: -5px;  
+}
+</style>
+
+<img src="assets/images/shank.jpg" alt="Avatar" style="width:25px"> <span style="">Shank Comic</span> 
+</a>
+
+<a href="https://www.youtube.com/@islamchanneltv">
+<style>
+img {
+  border-radius: 50%;
+  margin-left: -10px;
+  margin-bottom: -5px;  
+}
+</style>
+
+<img src="assets/images/islam.jpg" alt="Avatar" style="width:25px"> <span style="">Islam Channel</span> 
+</a>
+
+
+<a href="https://youtube.com/@DhTekKz?si=VYYicBDtsvqXV5X2">
+<style>
+img {
+  border-radius: 50%;
+  margin-left: -10px;
+  margin-bottom: -5px;  
+}
+</style>
+
+<img src="assets/images/tekkz.jpg" alt="Avatar" style="width:25px"> <span style="">DH tekkz</span>
+</a>
+
+<a href="https://youtube.com/@DhTekKz?si=VYYicBDtsvqXV5X2">
+<style>
+img {
+  border-radius: 50%;
+  margin-left: -10px;
+  margin-bottom: -5px;  
+}
+</style>
+
+<img src="assets/images/boda.jpg" alt="Avatar" style="width:25px"> <span style="">Broda shaggi</span>
+</a>
+<hr><a style="margin-left:-10px"> <strong><b>Explore</b></strong></a>
+<a style="margin: 5px" href="#services"> <i class="fa-solid fa-fire"></i> Trending</a>
+<a style="margin: 5px" href="#services"> <i class="fa-solid fa-music"></i> Music</a>
+<a style="margin: 5px" href="#services"> <i class="fa-solid fa-gamepad"></i> Gaming</a>
+<a style="margin: 5px" href="#services"> <i class="fa-regular fa-newspaper"></i> News</a>
+<a style="margin: 5px" href="#services"> <i class="fa-solid fa-trophy"></i> Sports</a>
+<hr><a style="margin-left:-10px"> <strong><b>More From Youtube</b></strong></a>
+<a href="https://youtube.com/@DhTekKz?si=VYYicBDtsvqXV5X2">
+<style>
+freed.img {
+  border-radius: 50%;
+  margin: 5px;
+}
+</style>
+
+<span class="freed"><img src="assets/images/youtube.png" alt="Avatar" style="width:25px"> Youtube</span>
+</a>
+
+<a href="https://youtube.com/@DhTekKz?si=VYYicBDtsvqXV5X2">
+<style>
+freed.img {
+  border-radius: 50%;
+  margin: 5px;
+}
+</style>
+
+<span class="freed"><img src="assets/images/studio.png" alt="Avatar" style="width:25px"> YT Studio</span>
+</a>
+<a href="https://youtube.com/@DhTekKz?si=VYYicBDtsvqXV5X2">
+<style>
+freed.img {
+  border-radius: 50%;
+  margin: 5px;
+}
+</style>
+
+<span class="freed"><img src="assets/images/music.png" alt="Avatar" style="width:20px"> YT music</span>
+</a>
+<a href="https://youtube.com/@DhTekKz?si=VYYicBDtsvqXV5X2">
+<style>
+freed.img {
+  border-radius: 50%;
+  margin: 5px;
+}
+</style>
+
+<span class="freed"><img src="assets/images/kid.png" alt="Avatar" style="width:25px"> YT Kids</span>
+</a>
+<hr><a><i class="fa-solid fa-gear"></i> Settings</a>
+<a><i class="fa-regular fa-flag"></i> Report</a>
+<a><i class="fa-solid fa-circle-info"></i> Help</a>
+<a><i class="fa-solid fa-triangle-exclamation"></i> Feedback</a>
+<hr><a>© 2023 Google LLC</a><br><br><br>
+</div>
+
+
+<div class="main">
+<div class="scrollmenu">
+  <a href="#home"><iframe width="210" height="260" src="https://www.youtube.com/embed/YwXuiFjMARw?si=PHYQF7fAGrx78UL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;  allowfullscreen></iframe></a>
+  <a><iframe width="300" height="260" src="https://www.youtube.com/embed/jurwEDpPkZQ?si=sE84bU8i-qRWgEZt"autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay"; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+<a><iframe width="300" height="260" src="https://www.youtube.com/embed/j2aBGvxC6jQ?si=N8i03eMozWxEyJtD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay="1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+ <a><iframe width="300" height="260" src="https://www.youtube.com/embed/fnjHeWsclJk?si=6IsyLdDwRmGC1TVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+<a><iframe width="300" height="260" src="https://www.youtube.com/embed/qv4DfYwrVxY?si=XsHYbtuEJI895m1d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a><br>
+  <a><iframe width="210" height="260" src="https://www.youtube.com/embed/iLI5--jFiYs?si=PL4bTXm58Q2bTBSi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+  <a><iframe width="300" height="260" src="https://www.youtube.com/embed/GXsQnCNgNng?si=_ksKg_s9MI2MlKrF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+<a><iframe width="300" height="260" src="https://www.youtube.com/embed/jurwEDpPkZQ?si=SgTXxN37bs5ola-H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+ <a><iframe width="300" height="260" src="https://www.youtube.com/embed/7VRlAzrZOZI?si=0Rn5zwleozlOm38b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a> <br>
+<a><iframe width="210" height="260" src="https://www.youtube.com/embed/TiNVdFk2t-U?si=4QrGkrlTnb8mZxnf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+ <a><iframe width="300" height="260" src="https://www.youtube.com/embed/j8r97Zy1q_o?si=RfS7JvaMnZVjVlBV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+ <a><iframe width="300" height="260" src="https://www.youtube.com/embed/0eX1QAHo4MM?si=YC3EXPU8CoUjIbRy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </a>
+<a><iframe width="300" height="260" src="https://www.youtube.com/embed/WEkJfPwRnQ0?si=wUX3_FZURROhgKmy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+<br>
+</div>
+</div>
+<style>
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: inherit; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: inherit; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: inherit; 
+}
+</style>
+
+
+</html>
